@@ -9,8 +9,9 @@ export default function AppDashboard() {
             <Navbar />
             <div class="container-fluid" id="main">
                 <div class="row row-offcanvas row-offcanvas-left">
-                <Sidebar/>
-                <Dashboard/>
+                    <Sidebar />
+                    <Dashboard />
+
                 </div>
             </div>
         </div>

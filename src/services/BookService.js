@@ -26,6 +26,10 @@ class BookService {
     return axios.get(`${this.baseUrl}` + "/totalBookCount");
   }
 
+  addBook= (user) => {
+    return axios.post(`${this.baseUrl}`+ "/addBook", user);
+}
+
 
 }
 

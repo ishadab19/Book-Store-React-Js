@@ -10,6 +10,7 @@ import RegisterForm from './components/user/RegistrationForm';
 import ForgetPassword from "./components/user/ForgotPassword";
 import ResetPassword from './components/user/ResetPassword';
 import Dashboard from './dashboard/AppDashboard';
+import AddBook from './dashboard/AddBook';
 
 class App extends React.Component {
 
@@ -27,7 +28,8 @@ class App extends React.Component {
           <Route path='registration' element={<RegisterForm />}></Route>
           <Route path='forgotpass' element={<ForgetPassword />}></Route>
           <Route path='/resetpass' element={<ResetPassword />}></Route>
-          <Route path='/dash' element={<Dashboard/>}></Route>
+          <Route path='/dash' element={<Dashboard />}></Route>
+          <Route path='/addbooks' element={<AddBook />} />
         </Routes>
 
       </div>);
