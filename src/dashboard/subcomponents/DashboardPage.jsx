@@ -1,9 +1,10 @@
-import React from 'react'
-import Dashboard from './Dashboard'
-import Navbar from './Navbar'
-import Sidebar from './Sidebar'
+import React from 'react';
+import Dashboard from '../Dashboard';
+import Navbar from '../Navbar';
+import Sidebar from '../Sidebar';
 
-export default function AppDashboard() {
+function DashboardPage() {
+
     return (
         <div>
             <Navbar />
@@ -15,5 +16,7 @@ export default function AppDashboard() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
+
+export default DashboardPage;

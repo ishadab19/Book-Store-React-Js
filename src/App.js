@@ -9,8 +9,10 @@ import LoginForm from './components/user/LoginForm';
 import RegisterForm from './components/user/RegistrationForm';
 import ForgetPassword from "./components/user/ForgotPassword";
 import ResetPassword from './components/user/ResetPassword';
-import Dashboard from './dashboard/AppDashboard';
-import AddBook from './dashboard/AddBook';
+import DashboardPage from "./dashboard/subcomponents/DashboardPage";
+import AddBookPage from "./dashboard/subcomponents/BookDashboardPage";
+
+import UserDashBoard from './dashboard/subcomponents/UserDashBoard ';
 
 class App extends React.Component {
 
@@ -28,8 +30,10 @@ class App extends React.Component {
           <Route path='registration' element={<RegisterForm />}></Route>
           <Route path='forgotpass' element={<ForgetPassword />}></Route>
           <Route path='/resetpass' element={<ResetPassword />}></Route>
-          <Route path='/dash' element={<Dashboard />}></Route>
-          <Route path='/addbooks' element={<AddBook />} />
+          <Route path='/dashboard' element={<DashboardPage/>}></Route>
+          <Route path='/addbooks' element={<AddBookPage/>}/>
+          <Route path='/user' element={<UserDashBoard/>}/>
+        
         </Routes>
 
       </div>);

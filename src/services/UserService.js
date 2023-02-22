@@ -27,6 +27,9 @@ class UserService {
     userGetAll = () => {
         return axios.get(`${this.baseUrl}`+ "/getAllUserNumber")
     }
+    userGetAllData = () => {
+        return axios.get(`${this.baseUrl}`+ "/getall")
+    }
     
 }
 
